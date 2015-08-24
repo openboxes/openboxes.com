@@ -1,0 +1,83 @@
+<script>
+// Include the UserVoice JavaScript SDK (only needed once on a page)
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/YkvS1YXcD9o2f8tiOphf5Q.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+//
+// UserVoice Javascript SDK developer documentation:
+// https://www.uservoice.com/o/javascript-sdk
+//
+
+// Set colors
+UserVoice.push(['set', {
+    position: 'above',    
+    accent_color: '#448dd6',
+    trigger_color: 'white',
+    trigger_style: 'tab',
+    menu_enabled: true,
+    trigger_background_color: '#448dd6'
+}]);
+
+
+/*
+UserVoice.push(['set', {
+  // Options can also be set on specific widgets instead of globally
+  target: 'self', // 'none' for toaster popups, #id for a specific element on the page
+  position: 'automatic', // Popover position
+  height: '325px', // Widget height
+  width: '100%', // Widget width
+  accent_color: '#458dd6', // Widget accent color
+  locale: 'en', // Defaults to your account’s localization
+  forum_id: '209871', // Defaults to your account’s default forum
+  smartvote_status_ids: [403280,403282], // Defaults to server-side settings
+  smartvote_category_ids: [69243], // Defaults to all categories
+  ticket_custom_fields: {
+    'Product': 'Web App',
+    'Type': 'Support Request'
+  },
+  contact_title: 'Send us a message',
+  smartvote_title: 'What should we build next?',
+  contact_enabled: true,
+  screenshot_enabled: true,
+  smartvote_enabled: true,
+  post_idea_enabled: true
+}]);
+
+UserVoice.push(['addTrigger', {
+  // Options can also be set globally instead of on specific widgets
+  trigger_style: 'icon', // icon or tab
+  trigger_position: 'bottom-right',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  trigger_prevent_default_enabled: true,
+  mode: 'contact', // contact, smartvote, or satisfaction
+  menu_enabled: true, // Defaults to false for custom triggers, embedded widgets, autoprompts, and the show method
+}]);
+*/
+
+// Identify the user and pass traits
+// To enable, replace sample data with actual user traits and uncomment the line
+UserVoice.push(['identify', {
+  //email:      'john.doe@example.com', // User’s email address
+  //name:       'John Doe', // User’s real name
+  //created_at: 1364406966, // Unix timestamp for the date the user signed up
+  //id:         123, // Optional: Unique id of the user (if set, this should not change)
+  //type:       'Owner', // Optional: segment your users by type
+  //account: {
+  //  id:           123, // Optional: associate multiple users with a single account
+  //  name:         'Acme, Co.', // Account name
+  //  created_at:   1364406966, // Unix timestamp for the date the account was created
+  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+  //  ltv:          1495.00, // Decimal; lifetime value of the account
+  //  plan:         'Enhanced' // Plan name for the account
+  //}
+}]);
+
+// Add default trigger to the bottom-right corner of the window:
+UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'right' }]);
+
+// Or, use your own custom trigger:
+//UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+UserVoice.push(['autoprompt', {}]);
+</script>

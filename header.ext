@@ -1,0 +1,79 @@
+<!- BEGIN Navigation bar -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="/">OpenBoxes</a>
+
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li><a href="http://openboxes.com">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="screenshots.html">Screenshots</a></li>
+					<!--
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="about.html">About</a></li>
+							<li><a href="screenshots.html">Screenshots</a></li>
+						</ul>
+					</li>
+					-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Demo <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://openboxes.com/demo">Single instance</a></li>
+							<li><a href="http://openboxes.com/demo-multiple">Multiple instances (sync'd)</a></li>
+						</ul>
+					</li>
+					
+                    <!--					
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+        					<li><a href="https://github.com/openboxes/openboxes/releases/latest">Latest Release</a></li>
+        					<li><a href="https://github.com/openboxes/openboxes/releases">All Releases</a></li>
+        			    </ul>
+        			</li>
+        			-->					
+        			<li><a href="http://docs.openboxes.com">Docs</a></li>
+        			<!--<li><a href="http://answers.openboxes.com">Answers</a></li>-->
+        			<li><a href="https://openboxes.atlassian.net/wiki/questions">Answers</a></li>
+        			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://github.com/openboxes/openboxes/wiki/Installation">Getting Started</a></li>
+        					<li><a href="https://github.com/openboxes/openboxes/releases/latest">Latest Release</a></li>
+							<li><a href="">Knowledge Base</a></li>
+							<li><a href="https://github.com/openboxes/openboxes/wiki">Documentation</a></li>
+							<li><a href="https://github.com/openboxes/openboxes/issues">Report a Bug</a></li>
+							<li><a href="feedback.html">Submit Feedback</a></li>
+							<li><a href="https://groups.google.com/forum/#!forum/openboxes">Mailing List</a></li>
+							<!--<li><a href="http://openboxes.22364.n7.nabble.com/">Mailing List</a></li>-->
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://github.com/openboxes/openboxes/blob/master/README.md">Getting Started</a></li>
+							<li><a href="https://github.com/openboxes/openboxes">Source Code</a></li>
+							<li><a href="https://openboxes.atlassian.net/browse/OB">Bug Tracking</a></li>
+							<li><a href="http://ci.openboxes.com:8085/browse/OPENBOXES">Continuous Integration</a></li>
+							<!--<li><a href="http://webchat.freenode.net?randomnick=0&channels=%23openboxes">IRC Chat</a></li>-->
+						</ul>
+					</li>
+					<li><a href="blog">Blog</a></li>
+					<!--<li><a href="hosting">Hosting</a></li>
+					<li><a href="pricing">Pricing</a></li>-->
+				</ul>
+			</div>
+
+		</div>
+      	</div>
+</div>
+<!- END Navigation bar -->

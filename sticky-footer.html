@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sticky footer &middot; Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- SlidesJS Optional: If you'd like to use this design -->
+  	<style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      
+      padding-top:70px;
+    }
+
+    #screenshots {
+      display: none
+    }
+
+    #screenshots .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(/img/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(/img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #screenshots a:link,
+    #screenshots a:visited {
+      color: #333
+    }
+
+    #screenshots a:hover,
+    #screenshots a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+	</style>
+	<!-- End SlidesJS Optional-->
+
+	<!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  	<style>
+    #screenshots {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+	</style>
+	<!-- SlidesJS Required: -->
+
+    <!-- CSS -->
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+    </style>
+    <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+     <link rel="shortcut icon" href="./ico/favicon.png">
+</head>
+<body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <!--#include file="header.ext" -->
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>Sticky footer with fixed navbar</h1>
+        </div>
+
+        <div class="row-fluid">	
+		    <div class='span12'>
+			    <h1>Open-source supply chain management</h1>	
+			    <h4>Supply chain management software designed to 
+				    manage drugs and supplies for healthcare facilities in developing countries.</h4>
+		    </div>
+	    </div>
+	    <div class="row-fluid">
+		    <div class="span5">
+			    <ul class="features">
+				    <li>
+					    Track stock within multiple facilities.
+				    </li>
+				    <li>
+					    Analyze demand to forecast future purchases.
+				    </li>
+				    <li>
+					    Track stock movements internally and externally.
+				    </li>
+				    <li>
+					    Know when your stock is expiring or stocked out.
+				    </li>
+				    <li>
+					    View stock history for any product or item.
+				    </li>
+				    <li>
+					    Record discrepancies when receiving international and domestic shipments.
+				    </li>
+				    <li>
+					    Perform cycle counts, inventory adjustments.
+				    </li>
+				    <li>
+					    Initiate purchasing through purchase orders.
+				    </li>
+				    <li>
+					    Allow clinicians to requisition stock from point-of-use locations within your hospital.
+				    </li>
+				    <li>
+					    Support for multiple languages (English, French, Spanish, and more).
+				    </li>
+				    <li>
+					    Automatic database migration via Liquibase.
+				    </li>
+				    <li>
+					    Manage all of your product master data in one place. 
+				    </li>
+				    <li>
+					    Synchronize data across multiple instances (powered by <a href="symmetricds.org">SymmetricDS</a>). <br/><a href="demo-multiple.html">Check out the OpenBoxes + SymmetricDS demo!</a>
+				    </li>
+			    </ul>
+                <!--
+			    <div class="centered-content">
+				    <p>
+					    <a class="btn btn-success btn-large" 
+					    target="_blank" href='http://github.com/openboxes/openboxes'>Browse the source code</a>
+					    <a class="btn btn-warning btn-large" 
+					    target="_blank" href='mailto:info@openboxes.com'>Contact us</a>
+				    </p>
+			    </div>
+                -->
+	        </div>
+	        <div class="span7">
+		        <!--
+		        <p><a target="_blank" href="http://demo.openboxes.com/openboxes/inventory/browse">
+			        <img src="/images/screenshots/browse-inventory-table.png" class="img-responsive"></a></p>
+		        -->
+			
+			    <div class="row-fluid">
+			        <div class="span12">
+				        <div id="screenshots">
+					        <!-- Browse Inventory -->
+					        <img src="images/screenshots/browse-inventory-table.png"/>
+					        <img src="images/screenshots/browse-inventory.png"/>
+					        <!-- Dashboard -->
+					        <img src="images/screenshots/dashboard.png" title="Dashboard"/>
+					        <img src="images/screenshots/stock-level-indicators.png"/>
+					        <img src="images/screenshots/stock-expiration-alerts.png"/>
+					        <img src="images/screenshots/recent-activity.png"/>
+					        <img src="images/screenshots/product-tags.png"/>
+					        <!-- Products -->
+					        <img src="images/screenshots/product-master-data.png"/>
+					        <img src="images/screenshots/upload-products.png"/>
+					        <img src="images/screenshots/edit-product-master-data.png"/>
+					        <!-- Stock -->
+					        <img src="images/screenshots/global-search.png"/>
+					        <img src="images/screenshots/stock-card.png"/>
+					        <img src="images/screenshots/stock-level-alerts.png"/>
+					        <img src="images/screenshots/monthly-consumption-data.png"/>
+					        <img src="images/screenshots/monthly-consumption-data-details.png"/>
+					        <img src="images/screenshots/stock-history.png"/>
+					        <img src="images/screenshots/record-inventory.png"/>
+					        <!-- Configuration -->
+					        <img src="images/screenshots/custom-header-per-location.png"/>
+					        <!-- Requisitions -->
+					        <img src="images/screenshots/requisitions.png"/>
+					        <img src="images/screenshots/stocklists.png"/>
+					        <img src="images/screenshots/canceled-items.png"/>
+					        <!-- Reporting -->
+					        <img src="images/screenshots/expiring-stock.png"/>
+					        <!-- Analytics -->
+					        <img src="images/screenshots/stock-analytics-2.png"/>
+					        <img src="images/screenshots/stock-analytics.png"/>
+					        <!-- Shipments -->
+					        <img src="images/screenshots/view-shipment.png"/>
+					
+					        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+              				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+				        </div>
+		            </div>
+			    </div><!-- /END row-fluid -->
+                <div class="row-fluid">
+			        <div class="span12 centered-content">
+				        <p>
+				            <a class="btn btn-success" 
+				            target="_blank" href='http://openboxes.com/demo.html'>Access Demo</a>
+				            <a class="btn btn-info" 
+				            target="_blank" href='https://openboxes.atlassian.net/wiki/questions'>Knowledge Base</a>
+				        </p>
+			        </div>
+			        <div class="span12 centered-content">
+				        <p>
+					        <a target="_blank" href='http://demo.openboxes.com/openboxes/auth/login'>Log in to the demo with an existing account</a> 
+				        </p>
+			        </div>
+                </div><!-- /END .row-fluid -->
+	        </div><!-- /END .span7 -->
+        </div><!-- /END .row-fluid -->   
+
+
+
+      <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      </div>
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./ember/js/libs/jquery-1.9.1.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./ember/js/libs/handlebars-1.0.0-rc.4.js"></script>    
+<script src="./ember/js/libs/ember-1.0.0-rc.6.1.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('#screenshots').slidesjs({
+		width: 940,
+		height: 528,
+		navigation: true,
+		play: {
+			  active: true,
+			  auto: false,
+			  interval: 4000,
+			  swap: true,
+			  pauseOnHover: true,
+			  restartDelay: 2500
+		}
+	});
+});
+</script>
+
+
+
+  </body>
+</html>
+
