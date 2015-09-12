@@ -162,7 +162,7 @@
 				        <p class="">
 				            <a class="btn btn-default" href="https://github.com/openboxes/openboxes/releases">Releases</a>
 				            <a class="btn btn-default" href='http://openboxes.com/demo.html'>Demo</a>
-				            <a class="btn btn-default" href='https://openboxes.atlassian.net/wiki/questions'>Answers</a>
+				            <a class="btn btn-default" href='https://openboxes.atlassian.net/wiki/questions?&filter=recent'>Answers</a>
 				            <a href="mailto:support@openboxes.com" class="btn btn-default" data-uv-trigger>Contact Us</a>
 				        </p>
 			        </div>
@@ -195,9 +195,39 @@ $(function() {
 			  swap: true,
 			  pauseOnHover: true,
 			  restartDelay: 2500
-		}
+		},
+        callback: {
+//          loaded: function(number) {
+//            // Use your browser console to view log
+//            console.log('SlidesJS: Loaded with slide #' + number);
+//
+//            // Show start slide in log
+//            $('#slidesjs-log .slidesjs-slide-number').text(number);
+//          },
+//          start: function(number) {
+//            // Use your browser console to view log
+//            console.log('SlidesJS: Start Animation on slide #' + number);
+//          },
+//          complete: function(number) {
+//            // Use your browser console to view log
+//            console.log('SlidesJS: Animation Complete. Current slide is #' + number);
+//
+//            // Change slide number on animation complete
+//            $('#slidesjs-log .slidesjs-slide-number').text(number);
+//          }
+        }
 	});
+
+//	$("li").click(function(event) {
+//	    console.log(event);
+//	    $('#screenshots').slidesjs({ start: 10 });
+//	});
+
 });
+
+
+
+
 </script>
 
 <!--#include file="analytics.ext" -->
