@@ -64,6 +64,7 @@
 							<li><a href="https://github.com/openboxes/openboxes">Source Code</a></li>
 							<li><a href="https://openboxes.atlassian.net/browse/OB">Bug Tracking</a></li>
 							<li><a href="http://ci.openboxes.com:8085/browse/OPENBOXES">Continuous Integration</a></li>
+							<li><a href="http://slack-signup.openboxes.com">Slack Signup</a></li>
 							<!--<li><a href="http://webchat.freenode.net?randomnick=0&channels=%23openboxes">IRC Chat</a></li>-->
 						</ul>
 					</li>
