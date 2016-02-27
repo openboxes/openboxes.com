@@ -41,15 +41,13 @@
         			</li>
         			-->					
         			<li><a href="http://docs.openboxes.com">Docs</a></li>
-        			<!--<li><a href="http://answers.openboxes.com">Answers</a></li>-->
-        			<li><a href="https://openboxes.atlassian.net/wiki/questions?&filter=recent">Answers</a></li>
-        			
+
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="https://github.com/openboxes/openboxes/wiki/Installation">Getting Started</a></li>
         					<li><a href="https://github.com/openboxes/openboxes/releases/latest">Latest Release</a></li>
-							<li><a href="">Knowledge Base</a></li>
+							<li><a href="https://openboxes.atlassian.net/wiki/questions?&filter=recent">Knowledge Base</a></li>
 							<li><a href="https://github.com/openboxes/openboxes/wiki">Documentation</a></li>
 							<li><a href="https://github.com/openboxes/openboxes/issues">Report a Bug</a></li>
 							<li><a href="feedback.html">Submit Feedback</a></li>
