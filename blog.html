@@ -26,6 +26,12 @@
 		footer { text-align: center; }
 		.centered-content{ text-align:center !important; vertical-align: middle !important;} 
 		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;text-align:center;}	
+		
+		#blog-entries { 
+		    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+		    font-size: 11pt;
+		}
+		
 	</style>
 	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 	<style type="text/css"> #contact_form { margin: 20px auto; width: 75%; } </style>
@@ -38,8 +44,9 @@
 
 	<div class="clear"/>
 	<div class="container">
-		<div class="row-fluid">	
-			<div class="span8 offset2">
+		<div class="row-fluid">
+		    <h1 class="page-header">Blog</h1>	
+			<div class="span6 offset3">
 				
 				<div id="blog-entries"></div>
 			</div>
@@ -50,9 +57,9 @@
 
 </div>
 
-<footer>
+<footer class="footer">
 	<div>
-	&copy; 2014 OpenBoxes | <a href="mailto:info@openboxes.com">info@openboxes.com</a>
+	&copy; 2016 OpenBoxes | <a href="mailto:info@openboxes.com">info@openboxes.com</a>
 	</div>
 </footer>
 
@@ -81,9 +88,9 @@ function printRSS(data) {
 		var post = $("<div></div>");
 		var header = $("<div></div>");
 		var well = $("<div></div>");
-		var title = $("<h3><a href='" + entry.link + "'>" + entry.title + "</a></h3>");
+		var title = $("<h2><a href='" + entry.link + "'>" + entry.title + "</a></h2>");
 		// <small>" + entry.publishedDate + "</small>
-		var author = $("<h4><small>" + entry.publishedDate + " &bull; <a href='mailto:justin@openboxes.com'>" + entry.author + "</a></small></h4>");
+		var author = $("<h4><small>" + " <a href='mailto:justin@openboxes.com'>" + entry.author + "</a>  &bull; " + entry.publishedDate + "</small></h4>");
 		var content = $("<p>" + entry.content + "</p>");
 		var hr = $("<hr></hr>");
 		header.append(title);

@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>OpenBoxes | About</title>
-    <meta name="description" content="Openboxes is a logistics information management system designed to track inventory and supply chain movements for healthcare facilities.">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Openboxes" />
-    <meta property="og:type" content="company" />
-    <meta property="og:url" content="http://openboxes.com" />
-    <meta property="og:image" content="http://openboxes.com/images/logo.jpg" />
-    <meta property="og:site_name" content="Openboxes" />
-    <meta property="fb:admins" content="100001231730655" />
+	<!--#include file="head.ext" -->
+    
     <!-- Le styles -->
-    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<!--#include file="css.ext" -->
+    
     <style type="text/css">
-	body { padding-top: 60px; }
 	@media (max-width: 980px) {
     		body { padding-top: 0;} 
 	}
 	.center { float: none; margin-left: auto; margin-right: auto; }
 	.icon-large:before { 1.3em }
 	ul.features > li { margin:0 5px 5px 0; vertical-align:top;} 
-	footer { text-align: center; }
 	.centered-content{ text-align:center !important; vertical-align: middle !important;} 
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;text-align:center;}
 </style>
@@ -33,51 +23,34 @@
 </head>
 <body>
 
-	<!--#include file="header.ext" --> 
+    <div id="wrap">
+    
+    	<!--#include file="header.ext" --> 
 
-
-
-<div class="clear"/>
-
-<div class="container">
+        <div class="container">
 		
-	<h1>About</h1>	
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="col-lg-3">
-			    <a href="http://www.pih.org/blog/wheels-up-air-pih-is-ready-for-departure"><img class="img-responsive" width="350" src="images/2010_01-EBahnsen.jpg" style="float:right; margin:10px;padding:10px;border: 1px solid #c0c0c0;"/></a></div>
-			<div class="col-lg-6">
-			<p>
-			In the aftermath of the January 2010 earthquake in Port au Prince, Haiti, <a href="pih.org" target="_blank">Partners in Health (PIH)</a> 
-			identified a crucial need for better supply chain management 
-			of medications and medical supplies, sourced from vendors and donors. After a review of existing third party systems failed 
-			to produce a viable option, PIH used funding from 
-			the <a href="http://www.rockefellerfoundation.org"/>Rockefeller Foundation</a> to begin the development of OpenBoxes in May 2010. 
-			</p>
+		
+	        <h1 class="page-header">Overview</h1>	
+	        <div class="row-fluid">
+		        <div class="span12">
+			        <div class="col-lg-3">
+    			        <!--
+			            <a href="http://www.pih.org/blog/wheels-up-air-pih-is-ready-for-departure"><img class="img-responsive" width="350" src="images/2010_01-EBahnsen.jpg" style="float:right; margin:10px;padding:10px;border: 1px solid #c0c0c0;"/></a>
+			            -->
+		            </div>
+			        <div class="col-lg-6">
+			
+			        <p>OpenBoxes is an open source supply chain management system that has been under development since 2010 and is designed to meet the needs of organizations delivering health care in resource-scarce settings, but has also been used for inventory management in the private sector. The OpenBoxes community is continually optimizing existing features and developing new features to innovatively meet users’ needs.</p>
+			
+			        <p>Currently, OpenBoxes can track the movement of goods through the supply chain, from purchase order to shipment, and from inventory to requisition and distribution. OpenBoxes can track medications, consumables, and equipment, and allows for inventory adjustments and movements of goods between and within facilities. Metadata about each product, including lot numbers, serial numbers, expiration dates, tags for cold chain and hazardous goods, package size, and manufacturer and vendor information, flow through the system with each product. Features also allow users to make substitutions, record demand versus order fulfillment, and run reports.</p> 
+			        </div>
+		        </div>
+	        </div>
+        </div>
+    </div>
 
-			<p>
-			OpenBoxes is an open-source inventory and supply chain management system. It is designed to manage the flow of products between warehouses, 
-			and the issue of stock from these warehouses to hospital wards and dispensaries.  It could also be used to manage stock at dispensaries, 
-			but would likely not be used to track patient-level transactions (e.g. administration and dispensing). It is also not intended to manage 
-			durable medical equipment, nor to provide detailed information about vendors.  
-			</p>
-
-			<p>		
-			OpenBoxes is currently being used by Partners In Health at depot locations in Boston, Miami, Port au Prince, and Mirebalais to track 
-			inventory and shipments.  These functionalities include creating products, conducting inventories of products, creating shipments 
-			(via air, sea, land, and suitcase), receiving and adjusting those shipments, and viewing the history of each product 
-			(i.e. when it arrived in a location, what shipment it was in, etc.).  It 
-			is also being used to record stock movements between the Mirebalais storage depot and the wards and pharmacies within the hospital. 
-			</p>
-			</div>
-		</div>
-	</div>
-
-            
 </div>
 <!--#include file="footer.ext" -->
-</div>
-
 <script src="./ember/js/libs/jquery-1.9.1.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>
 <script src="./ember/js/libs/handlebars-1.0.0-rc.4.js"></script>    

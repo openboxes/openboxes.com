@@ -3,179 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>OpenBoxes | Screenshots</title>
-	<meta name="description" content="OpenBoxes is a logistics information management system designed to track inventory and supply chain movements for healthcare facilities.">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="OpenBoxes" />
-	<meta property="og:type" content="company" />
-	<meta property="og:url" content="http://openboxes.com" />
-	<meta property="og:image" content="http://openboxes.com/images/logo.jpg" />
-	<meta property="og:site_name" content="OpenBoxes" />
-	<meta property="fb:admins" content="100001231730655" />
+	<!--#include file="head.ext" -->
+
+	<!-- Le styles -->
+	<!--#include file="css.ext" -->
 	
- <!-- SlidesJS Optional: If you'd like to use this design -->
-  <style>
-    body {
-      -webkit-font-smoothing: antialiased;
-      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #232525;
-      padding-top:70px;
-    }
-
-    #screenshots {
-      display: none
-    }
-
-    #screenshots .slidesjs-navigation {
-      margin-top:5px;
-    }
-
-    a.slidesjs-next,
-    a.slidesjs-previous,
-    a.slidesjs-play,
-    a.slidesjs-stop {
-      background-image: url(/img/btns-next-prev.png);
-      background-repeat: no-repeat;
-      display:block;
-      width:12px;
-      height:18px;
-      overflow: hidden;
-      text-indent: -9999px;
-      float: left;
-      margin-right:5px;
-    }
-
-    a.slidesjs-next {
-      margin-right:10px;
-      background-position: -12px 0;
-    }
-
-    a:hover.slidesjs-next {
-      background-position: -12px -18px;
-    }
-
-    a.slidesjs-previous {
-      background-position: 0 0;
-    }
-
-    a:hover.slidesjs-previous {
-      background-position: 0 -18px;
-    }
-
-    a.slidesjs-play {
-      width:15px;
-      background-position: -25px 0;
-    }
-
-    a:hover.slidesjs-play {
-      background-position: -25px -18px;
-    }
-
-    a.slidesjs-stop {
-      width:18px;
-      background-position: -41px 0;
-    }
-
-    a:hover.slidesjs-stop {
-      background-position: -41px -18px;
-    }
-
-    .slidesjs-pagination {
-      margin: 7px 0 0;
-      float: right;
-      list-style: none;
-    }
-
-    .slidesjs-pagination li {
-      float: left;
-      margin: 0 1px;
-    }
-
-    .slidesjs-pagination li a {
-      display: block;
-      width: 13px;
-      height: 0;
-      padding-top: 13px;
-      background-image: url(/img/pagination.png);
-      background-position: 0 0;
-      float: left;
-      overflow: hidden;
-    }
-
-    .slidesjs-pagination li a.active,
-    .slidesjs-pagination li a:hover.active {
-      background-position: 0 -13px
-    }
-
-    .slidesjs-pagination li a:hover {
-      background-position: 0 -26px
-    }
-
-    #screenshots a:link,
-    #screenshots a:visited {
-      color: #333
-    }
-
-    #screenshots a:hover,
-    #screenshots a:active {
-      color: #9e2020
-    }
-
-    .navbar {
-      overflow: hidden
-    }
-  </style>
-  <!-- End SlidesJS Optional-->
-  <!-- End SlidesJS Optional-->
-
-  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
-  <style>
-    #screenshots {
-      display: none
-    }
-
-    .container {
-      margin: 0 auto
-    }
-
-    /* For tablets & smart phones */
-    @media (max-width: 767px) {
-      body {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smartphones */
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smaller displays like laptops */
-    @media (min-width: 768px) and (max-width: 979px) {
-      .container {
-        width: 724px
-      }
-    }
-
-    /* For larger displays */
-    @media (min-width: 1200px) {
-      .container {
-        width: 1170px
-      }
-    }
-  </style>
-  <!-- SlidesJS Required: -->
-<!-- Le styles -->
-	<link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	
 	<style type="text/css">
-		body { padding-top: 60px; }
 		@media (max-width: 980px) {
 	    		body { padding-top: 0;} 
 		}
@@ -190,12 +24,15 @@
 
 </head>
 <body>
+
+<div id="wrap">
+
 	<!--#include file="header.ext" -->       
 	<div class="clear"></div>
 	
 	<div class="container">
 		<div class="row-fluid">	
-			<h1>Screenshots</h1>	
+			<h1 class="page-header">Screenshots</h1>	
 			<p class="lead">These are just a few screenshots to illustrate some of the functionality of OpenBoxes.  </p>
         </div>
 		<div class="row-fluid">
@@ -203,7 +40,8 @@
 				<!-- Browse Inventory -->
 				<img src="images/screenshots/browse-inventory-table.png"/>
 				<!-- Dashboard -->
-				<img src="images/screenshots/dashboard.png" title="Dashboard"/>
+				
+				<!--<img src="images/screenshots/dashboard.png" title="Dashboard"/>-->
 				<img src="images/screenshots/new/fast-moving-items.png" title="Fast Moving Items"/>
 				<img src="images/screenshots/new/inventory-snapshot.png" title="Inventory Snapshot"/>
 				<img src="images/screenshots/new/substitutions.png" title="Substitutions"/>
@@ -266,14 +104,10 @@
 
 		<div id="disqus_thread"></div>
      
-		<footer>
-			<div>
-				&copy; 2014 OpenBoxes | <a href="mailto:info@openboxes.com">info@openboxes.com</a>
-			</div>
-		</footer>
 	</div>
 
 </div>
+<!--#include file="footer.ext" -->
 
 <script src="./ember/js/libs/jquery-1.9.1.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>

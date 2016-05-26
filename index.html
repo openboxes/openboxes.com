@@ -3,23 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>OpenBoxes</title>
-    <meta name="description" content="OpenBoxes is a logistics information management system designed to track inventory and supply chain movements for healthcare facilities.">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="OpenBoxes" />
-    <meta property="og:type" content="company" />
-    <meta property="og:url" content="http://openboxes.com" />
-    <meta property="og:image" content="http://openboxes.com/images/logo.jpg" />
-    <meta property="og:site_name" content="OpenBoxes" />
-    <meta property="fb:admins" content="100001231730655" />
+
+	<!--#include file="head.ext" -->
   
 	<!-- Le styles -->
-    <link href="/css/slidejs.css" rel="stylesheet">
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/bootstrap-sticky-footer.css" rel="stylesheet">    
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="//openboxes.com/favicon.ico?v=2" />
+	<!--#include file="css.ext" -->
+    
     <style type="text/css">
 	   
 	    @media (max-width: 980px) {
@@ -28,26 +17,27 @@
 	    .center { float: none; margin-left: auto; margin-right: auto; }
 	    .icon-large:before { 1.3em }
 	    ul.features > li { margin:0 5px 5px 0; vertical-align:top;} 
-	    footer { text-align: center; }
 	    .centered-content{ text-align:center !important; vertical-align: middle !important;} 
 	    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;text-align:center;}
+	    .raise { position: relative; z-index: 1; }
 	</style>
 	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
 
 </head>
 <body>
+    <!--#include file="github.ext" -->
 
 <div id="wrap">
-
     <!--#include file="header.ext" -->
     <div class="container " >
-        <div class="page-header">
-          <h1>Open-source supply chain management</h1>
-        </div>
-
+        
+        <h1 class="page-header">Open-source supply chain management</h1>
 	    <div class="row-fluid">
-		    <div class="span6">
+		    <div class="span4">
         	    <p class="lead">Software designed to manage supplies and medications for healthcare facilities.</p>
 			    <ul class="features">
 				    <li>
@@ -102,7 +92,7 @@
 			    </div>
                 -->
 	        </div>
-	        <div class="span6">
+	        <div class="span8">
 		        <!--
 		        <p><a target="_blank" href="http://demo.openboxes.com/openboxes/inventory/browse">
 			        <img src="/images/screenshots/browse-inventory-table.png" class="img-responsive"></a></p>
@@ -113,31 +103,31 @@
 				        <div id="screenshots">
 					        <!-- Browse Inventory -->
 					        <img src="images/screenshots/browse-inventory-table.png"/>
-					        <img src="images/screenshots/browse-inventory.png"/>
+					        <!--<img src="images/screenshots/browse-inventory.png"/>-->
 					        <!-- Dashboard -->
-					        <img src="images/screenshots/dashboard.png" title="Dashboard"/>
+					        <!--<img src="images/screenshots/dashboard.png" title="Dashboard"/>-->
 					        <img src="images/screenshots/stock-level-indicators.png"/>
 					        <img src="images/screenshots/stock-expiration-alerts.png"/>
 					        <img src="images/screenshots/recent-activity.png"/>
 					        <img src="images/screenshots/product-tags.png"/>
 					        <!-- Products -->
-					        <img src="images/screenshots/product-master-data.png"/>
+					        <!--<img src="images/screenshots/product-master-data.png"/>-->
 					        <img src="images/screenshots/upload-products.png"/>
-					        <img src="images/screenshots/edit-product-master-data.png"/>
+					        <!--<img src="images/screenshots/edit-product-master-data.png"/>-->
 					        <!-- Stock -->
-					        <img src="images/screenshots/global-search.png"/>
-					        <img src="images/screenshots/stock-card.png"/>
-					        <img src="images/screenshots/stock-level-alerts.png"/>
-					        <img src="images/screenshots/monthly-consumption-data.png"/>
-					        <img src="images/screenshots/monthly-consumption-data-details.png"/>
-					        <img src="images/screenshots/stock-history.png"/>
-					        <img src="images/screenshots/record-inventory.png"/>
+					        <!--<img src="images/screenshots/global-search.png"/>-->
+					        <!--<img src="images/screenshots/stock-card.png"/>-->
+					        <!--<img src="images/screenshots/stock-level-alerts.png"/>-->
+					        <!--<img src="images/screenshots/monthly-consumption-data.png"/>-->
+					        <!--<img src="images/screenshots/monthly-consumption-data-details.png"/>-->
+					        <!--<img src="images/screenshots/stock-history.png"/>-->
+					        <!--<img src="images/screenshots/record-inventory.png"/>-->
 					        <!-- Configuration -->
-					        <img src="images/screenshots/custom-header-per-location.png"/>
+					        <!--<img src="images/screenshots/custom-header-per-location.png"/>-->
 					        <!-- Requisitions -->
-					        <img src="images/screenshots/requisitions.png"/>
-					        <img src="images/screenshots/stocklists.png"/>
-					        <img src="images/screenshots/canceled-items.png"/>
+					        <!--<img src="images/screenshots/requisitions.png"/>-->
+					        <!--<img src="images/screenshots/stocklists.png"/>-->
+					        <!--<img src="images/screenshots/canceled-items.png"/>-->
 					        <!-- Reporting -->
 					        <img src="images/screenshots/expiring-stock.png"/>
 					        <!-- Analytics -->
@@ -162,30 +152,30 @@
 				            <a class="btn btn-primary" target="_blank" href="http://demo.openboxes.com/openboxes/auth/signup">
 				                <i class="icon-globe icon-white"></i> Try the Demo</a>
 				            <a class="btn btn-default" target="_blank" href="https://github.com/openboxes/openboxes">
-				                <i class="icon-search"></i> View on Github</a>
+				                <i class="icon-search"></i> View Source Code</a>
 				            <a class="btn btn-default" target="_blank" href="http://docs.openboxes.com">
 				                <i class="icon-book"></i> Read the Docs</a>
 				            <a class="btn btn-default" href="mailto:support@openboxes.com" data-uv-trigger>
 				                <i class="icon-bullhorn"></i> Contact Us</a>
 				        </p>
+				        <!--
 			            <p class="">
     		                <script async defer src="http://slack-signup.openboxes.com/slackin.js?large"></script>
 			                <a href="https://twitter.com/OpenBoxesSCM" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OpenBoxesSCM</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-			            </p>
+			            </p>-->
 			        </div>
                 </div><!-- /END .row-fluid -->
 	        </div><!-- /END .span7 -->
         </div><!-- /END .row-fluid -->        
     </div><!-- /END .container -->
-    <div id="push"></div>
    
 </div><!-- /END #wrap -->    
+
+
 <!--#include file="footer.ext" -->
     
-
-
 <script src="./ember/js/libs/jquery-1.9.1.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>
 <script src="./ember/js/libs/handlebars-1.0.0-rc.4.js"></script>    
@@ -238,6 +228,8 @@ $(function() {
 <!--#include file="analytics.ext" -->
 <!--#include file="uservoice.ext" -->
 <!--#include file="chat.ext" -->
+
+
 
 </body>
 </html>
