@@ -1,5 +1,18 @@
-<footer class="footer">
-	<p class="muted credit">&copy; 2016 OpenBoxes 
-	<a class="muted" href="mailto:info@openboxes.com">info@openboxes.com</a></p>
+<footer class="navbar navbar-fixed-bottom">
+    <p>
+	    <span class="muted credit">&copy; 2016 OpenBoxes</span>
+        &bull;
+	    <span>
+	        <a class="" href="mailto:info@openboxes.com">info@openboxes.com</a>
+        </span>
+        &bull;
+	    <span class="license">License: <a href="https://www.eclipse.org/legal/epl-v10.html">EPLv1.0</a></span>
+        &bull;
+	    <span class="support">Support: <a href="mailto:support@openboxes.com">support@openboxes.com</a></span>
+        &bull;
+        <span>
+            <a href="tel:+16174290219">+1 (617) 475-0619</a>
+        </span>
+    </p>
 </footer>
 

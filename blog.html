@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>OpenBoxes | Blog</title>
-	<meta name="description" content="OpenBoxes is a logistics information management system designed to track inventory and supply chain movements for healthcare facilities.">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="OpenBoxes" />
-	<meta property="og:type" content="company" />
-	<meta property="og:url" content="http://openboxes.com" />
-	<meta property="og:image" content="http://openboxes.com/images/logo.jpg" />
-	<meta property="og:site_name" content="OpenBoxes" />
-	<meta property="fb:admins" content="100001231730655" />
+	<title>OpenBoxes Blog</title>
+	
+	
+	<!--#include file="head.ext" -->
+  
 	<!-- Le styles -->
-	<link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<!--#include file="css.ext" -->
+    
+    <style type="text/css">
+	    @media (max-width: 980px) {
+        		body { padding-top: 0;} 
+	    }
+	    .center { float: none; margin-left: auto; margin-right: auto; }
+	    .icon-large:before { 1.3em }
+	    ul.features > li { margin:0 5px 5px 0; vertical-align:top;} 
+	    .centered-content{ text-align:center !important; vertical-align: middle !important;} 
+	    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;text-align:center;}
+	    .raise { position: relative; z-index: 1; }
+	</style>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
+
+	
 	<style type="text/css">
-		body { padding-top: 60px; }
+		
 		@media (max-width: 980px) {
 	    		body { padding-top: 0;} 
 		}
-		.center { float: none; margin-left: auto; margin-right: auto; }
-		.icon-large:before { 1.3em }
-		ul.features > li { margin:0 5px 5px 0; vertical-align:top;} 
-		footer { text-align: center; }
-		.centered-content{ text-align:center !important; vertical-align: middle !important;} 
-		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;text-align:center;}	
 		
 		#blog-entries { 
 		    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
@@ -33,20 +40,16 @@
 		}
 		
 	</style>
-	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-	<style type="text/css"> #contact_form { margin: 20px auto; width: 75%; } </style>
 </head>
 <body>
 
+<div id="wrap">
+    <!--#include file="header.ext" -->
+    <div class="container">        
 
-	<!--#include file="header.ext" -->     
-
-
-	<div class="clear"/>
-	<div class="container">
 		<div class="row-fluid">
 		    <h1 class="page-header">Blog</h1>	
-			<div class="span6 offset3">
+			<div class="span10 offset1">
 				
 				<div id="blog-entries"></div>
 			</div>
@@ -57,11 +60,8 @@
 
 </div>
 
-<footer class="footer">
-	<div>
-	&copy; 2016 OpenBoxes | <a href="mailto:info@openboxes.com">info@openboxes.com</a>
-	</div>
-</footer>
+
+<!--#include file="footer.ext" -->
 
 
 
@@ -95,7 +95,11 @@ function printRSS(data) {
 		var hr = $("<hr></hr>");
 		header.append(title);
 		well.append(content);
-		post.append(header).append(author).append(well).append(hr);
+		post.append(header).append(author).append(well);
+		
+		if (i<l-1) { 
+    		post.append(hr);
+		}
 		$("#blog-entries").append(post);
 	}
 
