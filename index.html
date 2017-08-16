@@ -32,17 +32,28 @@
 
 <div id="wrap">
     <!--#include file="header.ext" -->
+    <div class="container-narrow">        
+
+        <div class="jumbotron">
+            <h1>OpenBoxes</h1>
+            <p class="lead">Open-source supply chain management system designed to manage supplies 
+            and medications for healthcare facilities and disaster relief efforts. </p>            
+        </div>
+    </div>
+    
     <div class="container">        
-        <h1 class="page-header">Open-source supply chain management</h1>
 	    <div class="row-fluid">
-		    <div class="span4">
-        	    <p class="lead">Software designed to manage supplies and medications for healthcare facilities.</p>
+		    <div class="span5">
+        	    <h4>Features</h4>
 			    <ul class="features">
 				    <li>
 					    Manage inventory within multiple facilities.
 				    </li>
 				    <li>
-					    Track stock movements internally and externally.
+					    Track stock movements into and out of your facilities.
+				    </li>
+				    <li>
+					    Organize your stock using bin locations. 
 				    </li>
 				    <li>
 					    Know when your stock is expiring or stocked out.
@@ -63,10 +74,10 @@
 					    Initiate purchasing through purchase orders.
 				    </li>
 				    <li>
-					    Requisition stock from point-of-use kiosks within your hospital.
+					    Request stock from point-of-use kiosks within your hospital.
 				    </li>
 				    <li>
-					    Support for multiple languages (English, French, Spanish, and more).
+					    Customize for any language/locale (includes Arabic, English, French, German, Italian, Portuguese, Spanish).
 				    </li>
 				    <li>
 					    Automated database schema updates via Liquibase.
@@ -90,14 +101,14 @@
 			    </div>
                 -->
 	        </div>
-	        <div class="span8">
+	        <div class="span7">
 		        <!--
 		        <p><a target="_blank" href="http://demo.openboxes.com/openboxes/inventory/browse">
 			        <img src="/images/screenshots/browse-inventory-table.png" class="img-responsive"></a></p>
 		        -->
 			
 			    <div class="row-fluid">
-			        <div class="span12 well">
+			        <div class="span12">
 				        <div id="screenshots">
 					        <!-- Browse Inventory -->
 					        <img src="images/screenshots/browse-inventory-table.png"/>
@@ -144,18 +155,28 @@
 				        </div>
 		            </div>
 			    </div><!-- /END row-fluid -->
-                <div class="row-fluid">
-			        <div class="span12 centered-content">
-				        <p class="">
-				            <a class="btn btn-primary" target="_blank" href="http://demo.openboxes.com/openboxes/auth/signup">
-				                <i class="icon-globe icon-white"></i> Try the Demo</a>
-				            <a class="btn btn-default" target="_blank" href="https://github.com/openboxes/openboxes">
-				                <i class="icon-search"></i> View Source Code</a>
-				            <a class="btn btn-default" target="_blank" href="http://docs.openboxes.com">
-				                <i class="icon-book"></i> Read the Docs</a>
-				            <a class="btn btn-default" href="mailto:support@openboxes.com">
-				                <i class="icon-bullhorn"></i> Contact Us</a>
-				        </p>
+	        </div><!-- /END .span7 -->
+            <div class="row-fluid">
+		        <div class="span12 centered-content">
+			        <p class="well">
+			            <a class="btn btn-default" target="_blank" href="http://demo.openboxes.com/openboxes/auth/signup">
+			                <i class="icon-globe"></i> Try the Demo</a>
+			            <a class="btn btn-default" target="_blank" href="mailto:support@openboxes.com?subject=Request%20a%20Demo">
+			                <i class="icon-bullhorn"></i> Request a Demo</a>
+			            <a class="btn btn-default" target="_blank" href="https://github.com/openboxes/openboxes">
+			                <i class="icon-search"></i> View Source Code</a>
+			            <a class="btn btn-default" target="_blank" href="http://docs.openboxes.com">
+			                <i class="icon-book"></i> Read the Docs</a>
+			        </p>
+		        </div>
+            </div><!-- /END .row-fluid -->
+        </div><!-- /END .row-fluid -->        
+
+    </div><!-- /END .container -->
+    
+</div><!-- /END #wrap -->    
+<!--#include file="footer.ext" -->
+
 				        <!--
 			            <p class="">
     		                <script async defer src="http://slack-signup.openboxes.com/slackin.js?large"></script>
@@ -163,13 +184,6 @@
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 			            </p>-->
-			        </div>
-                </div><!-- /END .row-fluid -->
-	        </div><!-- /END .span7 -->
-        </div><!-- /END .row-fluid -->        
-    </div><!-- /END .container -->
-</div><!-- /END #wrap -->    
-<!--#include file="footer.ext" -->
     
 <script src="./ember/js/libs/jquery-1.9.1.js"></script>
 <script src="./bootstrap/js/bootstrap.js"></script>
@@ -182,6 +196,10 @@ $(function() {
 //    $zopim(function() {
 //        $zopim.livechat.window.show();
 //    });
+    $("img").on("click", ".slidesjs-slide", function(event){
+        console.log("clicked: ", event, this);
+        window.open(this.src);
+    });
 
     $('#screenshots').slidesjs({
 		width: 940,

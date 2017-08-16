@@ -7,4 +7,16 @@
   ga('require', 'linkid', 'linkid.js');
   ga('send', 'pageview');
 
+function handleEvent(event, eventCategory, eventAction) {
+    //console.log("event: ", event);
+    //console.log("event: ", eventCategory, eventAction);
+    ga('send', 'event',  {
+        eventCategory: eventCategory,
+        eventAction: eventAction,
+        eventLabel: event.target.href
+    });
+}
 </script>
+
+
+

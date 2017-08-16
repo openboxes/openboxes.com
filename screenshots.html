@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>OpenBoxes | Screenshots</title>
+	<title>OpenBoxes | Features</title>
 	<!--#include file="head.ext" -->
 
 	<!-- Le styles -->
@@ -32,13 +32,15 @@
 	<!--#include file="header.ext" -->       
 	<div class="clear"></div>
 	
-	<div class="container">
-		<div class="row-fluid">	
-			<h1 class="page-header">Features</h1>	
-			<p class="lead">These are just a few screenshots to illustrate some of the functionality of OpenBoxes.  </p>
-        </div>
+	
+	
+    <div class="container-narrow">
+        <div class="jumbotron">
+            <h1>Features</h1>
+            <p class="lead">Just a few screenshots to illustrate some of the functionality of OpenBoxes.</p> 
+        </div>        
 		<div class="row-fluid">
-			<div id="screenshots" class="offset1 span10">
+			<div id="screenshots" class="span12">
 				<!-- Browse Inventory -->
 				<img src="images/screenshots/browse-inventory-table.png"/>
 				<!-- Dashboard -->
@@ -118,6 +120,9 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
 <script type="text/javascript">
 $(function() {
+
+
+    
 	$('#screenshots').slidesjs({
 		width: 940,
 		height: 528,
@@ -152,6 +157,13 @@ $(function() {
           }
       }
 	});
+	
+	$("img").click(function(event){
+        console.log("clicked: ", event, this);
+        window.open(this.src);
+    });
+	
+	
 });
 </script>
 

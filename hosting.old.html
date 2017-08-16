@@ -28,7 +28,6 @@
 		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;text-align:center;}	
 	</style>
 	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-	<style type="text/css"> </style>
 </head>
 <body>
 
@@ -38,88 +37,78 @@
 
 <div class="container">
 	<h1>Hosting & Support</h1>	
-	<p class="lead">Want us to host your OpenBoxes server?  Need to develop a new feature?</p>
-
-	
+	<p class="lead">Need someone to help with installation and hosting? Need someone to develop a custom feature?</p>
 		<div class="row-fluid">	
 			<div class="span12">
-				<div class="well well-small">
-					If you're interested in using a hosted version of OpenBoxes please send us a message and we'll get back to you with more information.
-				</div>
-				<form id="test_form" name="contact" method="post" class="form-horizontal">
-					<div class="control-group">
-    					<label class="control-label" for="services">Services</label>
-						<div class="controls">
+				<div class="well">
+				    <form id="test_form" name="contact" method="post" class="form-horizontal">
+					    
+					    <div class="control-group">
+        					<label class="control-label" for="services">Name</label>
+						    <div class="controls">			
+							    <input class="input-xxlarge" id="name" name="name" type="text" placeholder="Your name"/>
+						    </div>
+					    </div>
+					    <div class="control-group">
+        					<label class="control-label" for="services">Email</label>
+						    <div class="controls">			
+							    <div class="input-prepend">
+								    <span class="add-on"><i class="icon-envelope"></i></span>
+								    <input class="input-xxlarge" id="email" name="email" type="email" placeholder="Email address"/>
+							    </div>
+						    </div>
+					    </div>
+					    <div class="control-group">
+        					<label class="control-label" for="services">Company / Organization</label>
+						    <div class="controls">			
+							    <input class="input-xxlarge" id="organization" name="organization" placeholder="Name of your company or organization" type="text">
+						    </div>
+					    </div>
+					    <div class="control-group">
+        					<label class="control-label" for="services">Services</label>
+						    <div class="controls">
 						
-							<div class="row-fluid">
-								<div class="span3">
-								
-									<label class="checkbox">
-										<input type="checkbox" id="services" name="services" value="development">Development
-									</label>
-									<label class="checkbox">
-										<input type="checkbox" id="services" name="services" value="hosting">Hosting
-									</label>
-									<label class="checkbox">
-										<input type="checkbox" id="services" name="services" value="installation">Installation & Setup
-									</label>
-								</div>
-								<div class="span3">
-									<label class="checkbox">
-										<input type="checkbox" id="services" name="services" value="implementation">Implementation
-									</label>
-									<label class="checkbox">
-										<input type="checkbox" id="services" name="services" value="support">Support
-									</label>
-									<label class="checkbox">
-										<input type="checkbox" id="services" name="services" value="training">Training
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="control-group">
-    					<label class="control-label" for="services">Contact Information</label>
-						<div class="controls">			
-							<div class="input-prepend">
-								<span class="add-on"><i class="icon-envelope"></i></span>
-								<input class="input-xxlarge" id="email" name="email" type="email" placeholder="Email address">
-							</div>
-						</div>
-					</div>
-					<div class="control-group">
-    					<label class="control-label" for="services">Company / Organization</label>
-						<div class="controls">			
-							<input class="input-xxlarge" id="organization" name="organization" placeholder="Name of your company or organization" type="text">
-						</div>
-					</div>
-					<div class="control-group">
-    					<label class="control-label" for="services">Additional Comments</label>
-						<div class="controls">			
-							<textarea name="message" id="message" class="input-xxlarge" rows="6" 
-								placeholder="Tell us more about your operation (including industry, number of products, types of products, number of facilities, warheouse staff size, number of suppliers, etc)."></textarea>
+							    <div class="row-fluid">
+								    <div class="span3">
+									    <label class="checkbox">
+										    <input type="checkbox" id="services" name="services" value="installation">Installation & Setup
+									    </label>
+									    <label class="checkbox">
+										    <input type="checkbox" id="services" name="services" value="implementation">Implementation
+									    </label>
+									    <label class="checkbox">
+										    <input type="checkbox" id="services" name="services" value="support">Support
+									    </label>
+								    </div>
+								    <div class="span3">
+									    <label class="checkbox">
+										    <input type="checkbox" id="services" name="services" value="hosting">Hosting
+									    </label>
+									    <label class="checkbox">
+										    <input type="checkbox" id="services" name="services" value="development">Custom Development
+									    </label>
+									    <label class="checkbox">
+										    <input type="checkbox" id="services" name="services" value="training">Training
+									    </label>
+								    </div>
+							    </div>
+						    </div>
+					    </div>
+					    <div class="control-group">
+        					<label class="control-label" for="services">Additional Comments</label>
+						    <div class="controls">			
+							    <textarea name="message" id="message" class="input-xxlarge" rows="6" 
+								    placeholder="Tell us more about your operation and requirements (including details such as industry, number of products, types of products, number of facilities, warheouse staff size, number of suppliers, etc)."></textarea>
 						
-						</div>
-					</div>
-					
-					
-					<!--
-					<h4>Monthly budget (optional)</h4>
-					<div class="input-prepend input-append">
-						<span class="add-on">$</span>
-						<input class="span6" id="budget" name="budget" type="text"/>
-						<span class="add-on">.00</span>
-						<span class="help-inline">What is your monthly budget for software hosting and support?</span>
-					</div>
-					-->
-					
-					
+						    </div>
+					    </div>
 
-					<div class="form-actions">
-						<button class="btn btn-primary" type="submit">Submit request</button>
-					</div>
-				</form>
 
+					    <div class="form-actions">
+						    <button class="btn btn-primary" type="submit">Submit Request</button>
+					    </div>
+				    </form>
+                </div>
 			</div>
 		</div>
 
@@ -175,6 +164,7 @@
         var organization = $('#organization').val();
         var message = $('#message').val();        
         var email = $('#email').val();
+        var name = $('#name').val();
  	
 		if (message && organization && email) { 
 			// Execute the JSONP request to submit the ticket
@@ -199,6 +189,7 @@
 				    $('#organization').val('');
 					$('#message').val('');
 					$('#email').val('');
+					$('#name').val('');
 					$('input:checkbox').attr("checked", false);
 				},
 				error: function(d, msg) {

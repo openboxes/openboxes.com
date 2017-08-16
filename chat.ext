@@ -7,3 +7,18 @@ $.src='//v2.zopim.com/?2T7RMi7ERqr3s8N20KQ3wOBRudcwosBA';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 </script>
 <!--End of Zopim Live Chat Script-->
+<script type="text/javascript">
+    function toggleChat() {        
+        $zopim(function() {
+            $zopim.livechat.window.toggle();
+        });
+    }
+    
+    function openPopoutChat() {        
+        $zopim(function() {
+            $zopim.livechat.window.openPopout();
+        });
+    }
+
+    
+</script>

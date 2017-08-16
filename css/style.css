@@ -4,7 +4,7 @@ html, body {
 }
 
 footer {
-	padding: 30px 0;
+	padding: 10px 0;
 	margin-top: 70px;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
@@ -29,6 +29,9 @@ body {
 ul.features > li { margin:0 5px 5px 0; vertical-align:top;} 
 .text-centered, .centered-content{ text-align:center !important; vertical-align: middle !important;} 
 
+#wrap { 
+ margin-bottom:150px; 
+}
 
 
 /* GLOBAL STYLES
@@ -40,6 +43,9 @@ body {
   color: #5a5a5a;
 }
 
+.text-justify {
+  text-align: justify;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -71,9 +77,10 @@ body {
 /* Increase vertical padding to match navbar links */
 .navbar .brand {
   padding: 14px 20px 16px; 
-  /*font-size: 16px;
-  font-weight: bold;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.5);*/
+  font-size: 24px;
+  font-weight: normal;
+  vertical-align: bottom;
+  /*text-shadow: 0 -1px 0 rgba(0,0,0,.5);*/
 }
 
 /* Navbar links: increase padding for taller navbar */
