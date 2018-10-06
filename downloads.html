@@ -18,78 +18,79 @@
 
 	<!--#include file="header.ext" --> 
 
-    <div class="container-narrow">
+    <div class="container">
 
         <div class="jumbotron">
             <h1>Downloads</h1>
-            <p class="lead">The moment we've all been waiting for ...</p>            
+            <p class="lead">... the moment we've all been waiting for!</p>            
         </div>
         
         
         <h4>Choose Your Own Adventure</h4>
         <div class="row-fluid">
-            <div class="span12 well">
-                <h4>Self-Hosting <small>Do It Yourself</small></h4>
-                <p class="text-justify">
-                    If you are interested in installing OpenBoxes on your laptop or in the cloud, you 
-                    should download the latest release and follow the installation instructions
-                    according to your platform. We recommend using Ubuntu 14.04, but you can also install on Mac and Windows.
-                </p>
-                <p>
-                    <strong>NOTE:</strong> OpenBoxes is distributed as a <a href="https://en.wikipedia.org/wiki/WAR_(file_format)" target="_blank">WAR </a> file. 
-                    In order to run OpenBoxes you'll need to deploy the WAR file to a Java servlet container (i.e. Tomcat, Jetty, Glassfish, etc) -- 
-                    Tomcat 7 is recommended. In addition, you'll need to install a somewhat recent version of the MySQL database (MySQL 5.5 or older).</p>
-                <p>
-                <a href="https://github.com/openboxes/openboxes/releases/latest" 
-                class="btn btn-primary btn-block" target="_blank">Download Latest Release (openboxes.war)</a>
-                <a href="https://openboxes.com/getting_started" 
-                class="btn btn-default btn-block" target="_blank">Getting Started</a>
-                <a href="http://docs.openboxes.com/en/latest/installation/ubuntu/" 
-                class="btn btn-default btn-block" target="_blank">Installation Guide</a>
-            </p>    
+            <div class="span4">
+                <div class="well">
+                    <h4>Self-Hosting <small>Do It Yourself</small></h4>
+                    <p class="text-justify">
+                        If you are interested in installing OpenBoxes on your laptop or in the cloud, you 
+                        should download the latest release and follow the installation instructions
+                        according to your platform. We recommend using Ubuntu 14.04, but you can also install on Mac and Windows.
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> OpenBoxes is distributed as a <a href="https://en.wikipedia.org/wiki/WAR_(file_format)" target="_blank">WAR </a> file. 
+                        In order to run OpenBoxes you'll need to deploy the WAR file to a Java servlet container (i.e. Tomcat, Jetty, Glassfish, etc) -- 
+                        Tomcat 7 is recommended. In addition, you'll need to install a somewhat recent version of the MySQL database (MySQL 5.5 or older).</p>
+                    <p>
+                    <a href="https://github.com/openboxes/openboxes/releases/latest" 
+                    class="btn btn-primary btn-block" target="_blank">Download Latest Release (openboxes.war)</a>
+                    <a href="https://openboxes.com/getting_started" 
+                    class="btn btn-default btn-block" target="_blank">Getting Started</a>
+                    <a href="http://docs.openboxes.com/en/latest/installation/ubuntu/" 
+                    class="btn btn-default btn-block" target="_blank">Installation Guide</a>
+                    </p>   
+                </div> 
             </div>
-        </div>
-        <div class="row-fluid">
             
-            <div class="span12 well">
-                <h4>Hosted <small></small></h4></a>
-                <p>
-                    We do not currently offer an official hosted solution for OpenBoxes. However, if you are
-                    neither a developer nor a sysadmin and would like to use OpenBoxes please contact 
-                    our support team and we can try to help. 
-                </p>
-                <p>
-                    We'll discuss your requirements to determine whether OpenBoxes would be a good fit for your organization.
-                    And if it is, we'd love to help install OpenBoxes on your preferred cloud providers (e.g. AWS, Azure, Digital Ocean, Google Cloud).
-                </p>
-                <p>
-                    Eventually, if there's enough interest (hint: refer your friends) we'll consider an official hosted solution with packages that
-                    include services like hosting, configuration, implementation, on-going support, and custom development.
-                </p>
-                <p>
-                <a href="mailto:support@openboxes.com" 
-                class="btn btn-default btn-block" target="_blank">Contact OpenBoxes Support</a>
-                </p>
+            <div class="span4">
+                <div class="well">
+                    <h4>Hosted <small></small></h4></a>
+                    <p>
+                        We do not currently offer an official hosted solution for OpenBoxes. However, if you are
+                        neither a developer nor a sysadmin and would like to use OpenBoxes please contact 
+                        our support team and we can try to help. 
+                    </p>
+                    <p>
+                        We'll discuss your requirements to determine whether OpenBoxes would be a good fit for your organization.
+                        And if it is, we'd love to help install OpenBoxes on your preferred cloud providers (e.g. AWS, Azure, Digital Ocean, Google Cloud).
+                    </p>
+                    <p>
+                        Eventually, if there's enough interest (hint: refer your friends) we'll consider an official hosted solution with packages that
+                        include services like hosting, configuration, implementation, on-going support, and custom development.
+                    </p>
+                    <p>
+                    <a href="mailto:support@openboxes.com" 
+                    class="btn btn-default btn-block" target="_blank">Contact OpenBoxes Support</a>
+                    </p>
+                </div>
             </div>
-        </div>          
-        <div class="row-fluid">
             
-            <div class="span12 well">
+            <div class="span4">
+                <div class="well">
+                    <h4>Developer</h4>
+                    <p>If you are are a Java/Grails developer interested in contributing to the project or implementing your own 
+                        functionality you should clone (see below) or fork 
+                        the <a href="https://github.com/openboxes/openboxes" target="_blank">main repository on GitHub</a>.</p>
+            
+                    <pre>$ git clone https://github.com/openboxes/openboxes.git</pre>
 
-                <h4>Developer</h4>
-                <p>If you are are a Java/Grails developer interested in contributing to the project or implementing your own 
-                    functionality you should clone (see below) or fork 
-                    the <a href="https://github.com/openboxes/openboxes" target="_blank">main repository on GitHub</a>.</p>
-        
-                <pre>$ git clone https://github.com/openboxes/openboxes.git</pre>
-
-                <p>Please review the <a href="https://github.com/openboxes/openboxes/blob/develop/README.md">README.md</a> in order to learn how to set up your development envrionment.
-                
-                <p>
-                    <a href="https://github.com/openboxes/openboxes" 
-                    class="btn btn-default btn-block" target="_blank">View Source Code</a>
-                    <a class="btn btn-default btn-block" href="https://github.com/openboxes/openboxes/blob/develop/README.md">Getting Started</a>
-                </p>
+                    <p>Please review the <a href="https://github.com/openboxes/openboxes/blob/develop/README.md">README.md</a> in order to learn how to set up your development envrionment.
+                    
+                    <p>
+                        <a href="https://github.com/openboxes/openboxes" 
+                        class="btn btn-default btn-block" target="_blank">View Source Code</a>
+                        <a class="btn btn-default btn-block" href="https://github.com/openboxes/openboxes/blob/develop/README.md">Getting Started</a>
+                    </p>
+                </div>
             </div>
         </div>     
     </div>
